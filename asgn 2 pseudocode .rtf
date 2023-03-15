@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww15780\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Assignment 2 count ones pseudocode\
+\
+main method (nothing passed through)\{\
+	initialize num variable as an int with no value\
+	initialize ones variable as an int with no value\
+	initialize len variable as an int with no value\
+	while loop (condition is True) \{\
+		print message(\cb2 \expnd0\expndtw0\kerning0
+\'93Welcome to the CountOnes program.\'94\cb1 \kerning1\expnd0\expndtw0 )\
+		set num equal to user response for \cb2 \expnd0\expndtw0\kerning0
+\'93Please enter a number\'94\
+		set len equal to int(log base 2 (num)) + 1\
+		set ones equal to CountOnes(num, len)\
+		print message(\'93The number of bits set is:\'a0\'94 + ones)\
+		if response to (ask user: 
+\fs29\fsmilli14667 \'93Continue (y/n)?: \'94) is \'93n\'94 \{\
+			break\
+		\}
+\fs28 \
+	\}\
+\}	\
+\
+CountOnes method \{n: number from user in regular, l: length of binary number)\
+	initialize counter variable\
+	create number of all 1s that is the length of the binary number\
+	compare each number in binary number to number of 1s\
+	If && the numbers and returns 1, there is a 1 there so increase counter by 1\
+	return counter\
+\}\
+}
